@@ -1,5 +1,3 @@
-# full-stack-e-commerce-react
-
 # Next.JS
 ## Schnelles laden der Produkte
 
