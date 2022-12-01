@@ -9,6 +9,6 @@
 
 # Sanity
 ## Muss eingerichtet werden (hier als Clean Project)
-## sanity docs (Documentation)
+## sanity docs (Documentation) => Nach Key Wörter suchen, die man nicht versteht
 ## sanity manage (Manager, aktuelles Projekt auswählbar)
-## sanity start ()
+## sanity start (Im Ordner "sanity_ecommerce" Schema starten + anmelden => localhost:3333)
