@@ -11,3 +11,4 @@
 ## Muss eingerichtet werden (hier als Clean Project)
 ## sanity docs (Documentation)
 ## sanity manage (Manager, aktuelles Projekt auswählbar)
+## sanity start ()
