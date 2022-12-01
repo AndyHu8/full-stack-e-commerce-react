@@ -6,3 +6,8 @@
 
 # npm run dev
 ## App starten
+
+# Sanity
+## Muss eingerichtet werden (hier als Clean Project)
+## sanity docs (Documentation)
+## sanity manage (Manager, aktuelles Projekt auswählbar)
