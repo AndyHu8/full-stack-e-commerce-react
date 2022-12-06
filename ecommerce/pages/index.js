@@ -24,7 +24,7 @@ const Home = ({ products, bannerData }) => {
 //Fetching mit Next.js statt React.js
 export const getServerSideProps = async () => {
   const query = '*[_type == "product"]'; //Nimm alle Produkte vom Sanity Dashboard
-  const products = await client.fetch(query); //Gehe zum richtigen Client & fetche alle Produkte
+  const products = await client.fetch(query); //Gehe zum richtigen Client und fetche alle Produkte
 
   const bannerQuery = '*[_type == "banner"]'; //Nimm alle Banner vom Sanity Dashboard
   const bannerData = await client.fetch(bannerQuery); //Gehe zum richtigen Client & fetche alle Banner
