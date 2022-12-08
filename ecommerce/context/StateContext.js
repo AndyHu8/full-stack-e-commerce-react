@@ -73,16 +73,32 @@ export const StateContext = ({ children }) => {
 
         if(value === "inc") {
 
-            //Nimm alte Liste + das richtige Produkt und erhöhe nur die Quantity vom Produkt
-            setCartItems([...newCartItems, {...foundProduct, quantity: foundProduct.quantity + 1}]);
+            //Nimm alte Liste
+            //Gehe durch alte Liste
+            //Wenn item's Id = Id ist, dann return alte Item, aber ersetze die Quantity
+            setCartItems((prevCartItems) => 
+                prevCartItems.map((item) => {          
+                    if (item._id === id){
+                        return {...item, quantity: foundProduct.quantity + 1}
+                    }
+                    return item;
+                })
+            );
             setTotalPrice((prevTotalPrice) => prevTotalPrice + foundProduct.price);
-            setTotalQuantities((prevTotalQuantities) => prevTotalQuantities + foundProduct.totalQuantities);
+            setTotalQuantities((prevTotalQuantities) => prevTotalQuantities + 1);
         }
         else if(value === "dec") {
             if(foundProduct.quantity > 1) {
-                setCartItems( [...newCartItems, {...foundProduct, quantity: foundProduct.quantity - 1}]);
+                setCartItems((prevCartItems) => 
+                prevCartItems.map((item) => {          
+                    if (item._id === id){
+                        return {...item, quantity: foundProduct.quantity - 1}
+                    }
+                    return item;
+                })
+            );
                 setTotalPrice((prevTotalPrice) => prevTotalPrice - foundProduct.price);
-                setTotalQuantities((prevTotalQuantities) => prevTotalQuantities - foundProduct.totalQuantities);
+                setTotalQuantities((prevTotalQuantities) => prevTotalQuantities - 1);
             }
         }
     }
