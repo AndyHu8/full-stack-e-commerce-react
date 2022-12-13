@@ -20,3 +20,6 @@ App starten
 
 # sanity start Problem
 Die richtigen Versionen von Deps aus dem Video entnehmen für sanity im sanity_ecommerce (package.json)
+
+# Alle Backend Sachen kommen in api Ordner (brauchen kein Node.js)
+- z.B. Stripe kommt hier rein
