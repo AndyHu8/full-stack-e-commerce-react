@@ -3,7 +3,7 @@ import Head from 'next/head'
 import Navbar from './Navbar'
 import Footer from './Footer'
 
-const Layout = ({ children }) => { //childern = Das was in dem <Layout> gewrapped ist
+const Layout = ({ children }) => { //children = Das was in dem <Layout> gewrapped ist
   return (
     <div className='layout'>
       <Head>
