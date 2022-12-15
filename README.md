@@ -23,3 +23,8 @@ Die richtigen Versionen von Deps aus dem Video entnehmen für sanity im sanity_e
 
 # Alle Backend Sachen kommen in api Ordner (brauchen kein Node.js)
 - z.B. Stripe kommt hier rein
+
+# Vercel
+- Fürs Deployment (https://vercel.com/)
+- Start Deploying + mit Github anmelden
+- Enviroment Variables einfügen aus .env
