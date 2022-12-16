@@ -28,3 +28,7 @@ Die richtigen Versionen von Deps aus dem Video entnehmen für sanity im sanity_e
 - Fürs Deployment (https://vercel.com/)
 - Start Deploying + mit Github anmelden
 - Enviroment Variables einfügen aus .env
+
+# Sanity Dashboard deployen
+- in sanity_ecommerce rein => Befehl: sanity deploy ausführen
+- Link wird auch im sanity.io Profil angezeigt (https://ecommerce-xiaobox.sanity.studio/desk)
