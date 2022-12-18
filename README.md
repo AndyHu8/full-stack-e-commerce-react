@@ -1,3 +1,18 @@
+# Start
+1. npx create-next-app (Abfragen: name, Typescript, ESLint)
+2. In package.json alle nötigen Deps installieren (Copy Paste in "dependencies": https://gist.github.com/adrianhajdin/55e019f0ec6a48c0ca6d933d3cf0181c)
+=> im richtigen Ordner: npm i --legacy-peer-deps ausführen
+3. npm run dev (Starten)
+
+# Sanity Setup
+1. Sanity global installieren: npm i -g @sanity/cli
+2. Sanity initalisieren + Coupon: sanity init --coupon javascriptmastery2022
+=> Mit Google anmelden, falls nicht schon + name vergeben
+=> Use the default dataset configuration? Yes!
+=> Project template: Clean Project
+
+-------------
+
 # Next.JS
 Schnelles laden der Produkte
 
@@ -14,7 +29,7 @@ App starten
 - sanity start (Im Ordner "sanity_ecommerce" Schema starten + anmelden => localhost:3333)
 
 # npm i --save-dev @babel/preset-react Problem
-- Erst die sanity Deps in package.json entfernen => dannn npm i
+- Erst die sanity Deps in package.json entfernen => dann npm i
 - Danach npm i sanity neu installieren
 - Danach npm i --save-dev @babel/preset-react installieren
 
